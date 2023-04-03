@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 9999px;
+  background-color: #0f101f;
+}
+/* START HEADER */
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(11, 0, 0, 0.3), rgba(1, 5, 21, 0.7)),
+    url(../img/front-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.kmhd {
+  color: #bb291f;
+  font-size: 24px;
+}
+.ukdw {
+  font-size: 20px;
+}
+.navbar-hover ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #bb291f;
+  display: flex;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar-hover ul li:hover::after,
+.tooltiptext a:hover::after {
+  width: 100%;
+  transform: scaleX(0.5);
+}
+
+/* START CONTENT */
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+.text-box .btn-ig {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn-ig:hover {
+  border: 1px solid #bb291f;
+  background: #bb291f;
+  transition: 1s;
+}
+
+/* END CONTENT */
+.anggota{
+  padding: 10rem 7% 1.4rem;
+}
+.anggota h1{
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
+/* Media Queries */
+@media (max-width: 1555px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 76.5%;
+  }
+  .text-box .btn-ig {
+    padding: 10px 28px;
+    font-size: 12px;
+  }
+  .text-box h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .btn-ig:hover {
+    border: 1px solid #bb291f;
+    background: #bb291f;
+    transition: 1s;
+  }
+}
